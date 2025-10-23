@@ -1,0 +1,24 @@
+{
+  "mutation_patterns": [
+    "ATGCCTAG",
+    "GCTAGCTA",
+    "TTAAGCCT",
+    "CGTAGGAT",
+    "GGATCCAA",
+    "TTAGCCGG",
+    "ACGTACGT",
+    "GGCCAATT",
+    "CCGGTTAA",
+    "AATTGGCC",
+    "TGCATGCA",
+    "CATGCATG",
+    "GCGCGCGC",
+    "ATATATATAT",
+    "CGCGCGCG",
+    "TATATATATA",
+    "GTGTGTGT",
+    "ACACACAC",
+    "TGTGTGTG",
+    "CACACACA"
+  ]
+}
