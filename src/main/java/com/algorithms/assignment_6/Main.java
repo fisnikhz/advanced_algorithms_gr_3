@@ -42,7 +42,6 @@ public class Main {
         System.out.println("Expected: InventoryResult{maxPriority=240, acceptedBatches=[B001, B002, B004]}");
         System.out.println("Explanation: B001(10,60) + B002(20,100) + B004(15,80) = 45 units, 240 priority");
         
-        // Verify
         boolean correct = result.getMaxPriority() == 240 &&
                          result.getAcceptedBatches().equals(Arrays.asList("B001", "B002", "B004"));
         System.out.println("Test Result: " + (correct ? "✓ PASSED" : "✗ FAILED"));
@@ -73,7 +72,6 @@ public class Main {
         System.out.println("Expected: InventoryResult{maxPriority=570, acceptedBatches=[X1, X2, X4]}");
         System.out.println("Explanation: X1(25,150) + X2(40,200) + X4(35,220) = 100 units, 570 priority");
         
-        // Verify
         boolean correct = result.getMaxPriority() == 570 &&
                          result.getAcceptedBatches().equals(Arrays.asList("X1", "X2", "X4"));
         System.out.println("Test Result: " + (correct ? "✓ PASSED" : "✗ FAILED"));
