@@ -19,9 +19,13 @@ public class EmployeeDepthCalculator {
         return calculateDepthRecursive(employeeMap, employeeId, visited);
     }
 
-    private static int calculateDepthRecursive(Map<Integer, Employee> employeeMap, 
-                                                int employeeId, 
-                                                Set<Integer> visited) {
+    private static int calculateDepthRecursive(
+        Map<Integer, Employee> employeeMap, 
+        int employeeId, 
+        Set<Integer> visited
+        )
+    {
+
         if (visited.contains(employeeId)) {
             return -1;
         }
@@ -47,6 +51,8 @@ public class EmployeeDepthCalculator {
         }
 
         return supervisorDepth + 1;
+            
     }
 }
+
 

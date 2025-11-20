@@ -1,10 +1,10 @@
-package com.algorithms.assignment_7.problem_1;
+package com.algorithms.assignment_7.problem_5;
 
 public class Employee {
-    private int id;
-    private String name;
-    private String position;
-    private double salary;
+    private final int id;
+    private final String name;
+    private final String position;
+    private final double salary;
     private Integer supervisorId;
 
     public Employee(int id, String name, String position, double salary, Integer supervisorId) {
@@ -19,32 +19,16 @@ public class Employee {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getPosition() {
         return position;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
-    }
-
     public double getSalary() {
         return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
     }
 
     public Integer getSupervisorId() {
@@ -54,12 +38,5 @@ public class Employee {
     public void setSupervisorId(Integer supervisorId) {
         this.supervisorId = supervisorId;
     }
-
-    @Override
-    public String toString() {
-        return String.format("Employee{id=%d, name='%s', position='%s', salary=%.0f, supervisorId=%s}",
-                id, name, position, salary, supervisorId);
-    }
 }
-
 
