@@ -29,9 +29,11 @@ public class PathToCeoFinder {
         return path == null ? Collections.emptyList() : path;
     }
 
-    private static List<Integer> buildPath(Map<Integer, Employee> employeeMap,
-                                           int currentId,
-                                           Set<Integer> visiting) {
+    private static List<Integer> buildPath(
+            Map<Integer, Employee> employeeMap,
+            int currentId,
+            Set<Integer> visiting
+    ) {
         if (!visiting.add(currentId)) {
             return null;
         }

@@ -37,11 +37,13 @@ public class SubordinateFinder {
         return result;
     }
 
-    private static void dfsCollectSubordinates(int managerId,
-                                               int depth,
-                                               Map<Integer, List<Employee>> directReports,
-                                               Set<Integer> path,
-                                               List<Subordinate> result) {
+    private static void dfsCollectSubordinates(
+            int managerId,
+            int depth,
+            Map<Integer, List<Employee>> directReports,
+            Set<Integer> path,
+            List<Subordinate> result
+    ) {
         List<Employee> reports = directReports.get(managerId);
         if (reports == null) {
             return;
